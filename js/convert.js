@@ -1,6 +1,6 @@
-$(document).ready(function () {
+$(document).ready(() => {
 
-    $('#submit-button').click(function (e) {
+    $('#submit-button').click((e) => {
 
     $('#json-entry').val('');
 
