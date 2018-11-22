@@ -18,7 +18,7 @@ $(document).ready(() => {
 	Object.entries(json).forEach(
             ([k, v]) => {
 		// use quote around type string but no quote for number or boolean
-                var quote = (v.constructor === String) ? '"' : '';
+                var quote = v != null && (v.constructor === String) ? '"' : '';
 
 		// add new line of java code
                 java += `request.put("${k}",  ${quote}${v}${quote});\n`;
