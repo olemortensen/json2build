@@ -21,7 +21,7 @@ $(document).ready(() => {
                 var quote = (v.constructor === String) ? '"' : '';
 
 		// add new line of java code
-                java += `request("${k}",  ${quote}${v}${quote});\n`;
+                java += `request.put("${k}",  ${quote}${v}${quote});\n`;
 	    }
         );
 
